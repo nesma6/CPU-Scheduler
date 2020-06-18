@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="bodybg" stylesheets="@background_1.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectss.SecondPriorityController">
+   <top>
+      <HBox alignment="CENTER_RIGHT" prefHeight="39.0" prefWidth="800.0" style="-fx-background-color: #57606F;" BorderPane.alignment="CENTER">
+         <children>
+            <FontAwesomeIcon fill="WHITE" glyphName="MINUS" onMouseClicked="#min" size="1.2em">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </FontAwesomeIcon>
+            <FontAwesomeIcon fill="WHITE" glyphName="CIRCLE" onMouseClicked="#max" size="1.2em">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </FontAwesomeIcon>
+            <FontAwesomeIcon fill="WHITE" glyphName="CLOSE" onMouseClicked="#closed" size="1.2em">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </FontAwesomeIcon>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="265.0" layoutY="33.0" prefHeight="52.0" prefWidth="413.0" style="-fx-text-fill: #66004d;" text="Welcome Priority">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="numberofprocesses" layoutX="398.0" layoutY="103.0" promptText="Number of processes" />
+            <Button layoutX="696.0" layoutY="163.0" mnemonicParsing="false" onAction="#Addprocess" style="-fx-background-color: #ff66d9;" text="Add Process" textFill="WHITE" />
+            <Label layoutX="14.0" layoutY="96.0" prefHeight="39.0" prefWidth="357.0" style="-fx-text-fill: #ac5396;" text="Enter number of processes :" />
+            <TextField fx:id="processid" layoutX="6.0" layoutY="163.0" prefHeight="25.0" prefWidth="118.0" promptText="Process ID" />
+            <TextField fx:id="processbursttime" layoutX="318.0" layoutY="163.0" prefHeight="23.0" prefWidth="106.0" promptText="Burst Time" />
+            <TextField fx:id="processarrivaltime" layoutX="162.0" layoutY="163.0" prefHeight="23.0" prefWidth="111.0" promptText="Arrival Time" />
+            <Button layoutX="664.0" layoutY="283.0" mnemonicParsing="false" onAction="#showcontents" style="-fx-background-color: #ff66d9;" text="Result" textFill="WHITE" />
+            <TextField fx:id="showtheaverage" layoutX="405.0" layoutY="283.0" prefHeight="20.0" prefWidth="135.0" />
+            <Label layoutX="19.0" layoutY="276.0" prefHeight="39.0" prefWidth="346.0" style="-fx-text-fill: #ac5396;" text="The average waiting time is:" />
+            <Button layoutX="737.0" layoutY="103.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: #ff66d9;" text="Home" textFill="WHITE" />
+            <VBox fx:id="vbox" layoutY="320.0" prefHeight="241.0" prefWidth="800.0" />
+            <TextField fx:id="processpriority" layoutX="471.0" layoutY="163.0" prefHeight="25.0" prefWidth="106.0" promptText="Priority" />
+            <Label layoutX="14.0" layoutY="219.0" prefHeight="40.0" prefWidth="371.0" style="-fx-text-fill: #ac5396;" text="Select The Type of Scheduler :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="421.0" layoutY="226.0" mnemonicParsing="false" onAction="#Preemptive" prefHeight="27.0" prefWidth="126.0" style="-fx-background-color: #ff66d9;" text="Preemptive" textFill="WHITE" />
+            <Button layoutX="570.0" layoutY="226.0" mnemonicParsing="false" onAction="#NonPreemptive" prefHeight="27.0" prefWidth="126.0" style="-fx-background-color: #ff66d9;" text="NonPreemptive" textFill="#fffdfd" />
+            <Button layoutX="599.0" layoutY="103.0" mnemonicParsing="false" onAction="#newoperation" style="-fx-background-color: #ff66d9;" text="New Operation" textFill="WHITE" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

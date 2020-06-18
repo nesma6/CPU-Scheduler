@@ -1,0 +1,41 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 9, 2020, 2:35:27 PM
+    Author     : Mony's HP Probook
+*/
+
+.bodybg{
+ -fx-background-image: url('background_1.jpg');
+ -fx-background-size: 100% 100%;
+}
+FontAwesomeIcon:hover{
+    -fx-cursor: hand;
+}
+.label {
+    -fx-font-size: 20pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill:  #ac5396;
+    -fx-opacity: 0.6;
+}
+.label-bright {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+.label-header {
+    -fx-font-size: 32pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: #ac5396;
+    -fx-opacity: 1;
+
+}
+.chart-legend-item{
+    -fx-text-fill:#ac5396;
+    -fx-font-size:14pt;
+}
